@@ -6,19 +6,6 @@
 
 //日付を表すDateClass
 class DateClass {
-	int userYear;   //年
-	int userMonth;  //月
-	int userDay;    //日
-
-					//平年の各月の日数
-	static int dayOfMax[];
-
-	//実際の各月の年数
-	static int dayOfYear(int inputYear);
-
-	//その月の日数
-	static int dayOfMonth(int inputYear, int inputMonth);
-
 public:
 
 	// 入力年が閏年かどうかを判断
@@ -105,6 +92,21 @@ public:
 
 	//日付を文字列にして返却
 	std::string getString() const;
+
+private:
+	int userYear;   //年
+	int userMonth;  //月
+	int userDay;    //日
+
+					//平年の各月の日数
+	static int dayOfMax[];
+
+	//実際の各月の年数
+	static int dayOfYear(int inputYear);
+
+	//その月の日数
+	static int dayOfMonth(int inputYear, int inputMonth);
+
 };
 
 //演算子関数<<
