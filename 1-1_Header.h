@@ -1,12 +1,12 @@
-/*
+ï»¿/*
 * new1-1.h
 *
 *  Created on: 2018/07/12
 *      Author: ddt
 */
 
-/*‰‰K1-1 ƒNƒ‰ƒXHuman‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^‚ğ–{ƒy[ƒW‚É¦‚µ‚½‚æ‚¤‚É‘‚«Š·‚¦‚½ƒvƒƒOƒ‰ƒ€‚ğì¬‚µA
-‰Šú‰»‚ªŠú‘Ò’Ê‚è‚És‚í‚ê‚é‚±‚Æ‚ğŠm”F‚¹‚æB*/
+/*æ¼”ç¿’1-1 ã‚¯ãƒ©ã‚¹Humanã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã‚’æœ¬ãƒšãƒ¼ã‚¸ã«ç¤ºã—ãŸã‚ˆã†ã«æ›¸ãæ›ãˆãŸãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ä½œæˆã—ã€
+åˆæœŸåŒ–ãŒæœŸå¾…é€šã‚Šã«è¡Œã‚ã‚Œã‚‹ã“ã¨ã‚’ç¢ºèªã›ã‚ˆã€‚*/
 
 
 #ifndef ___NEW1_1_H_
@@ -14,33 +14,33 @@
 
 #include<string>
 
-//lŠÔƒNƒ‰ƒXHumanClass
+//äººé–“ã‚¯ãƒ©ã‚¹HumanClass
 class HumanClass {
-
-
-	std::string fullName;  //–¼‘O
-	int userHeight;        //g’·
-	int userWeight;        //‘Ìd
-
 public:
 
-	//ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	//ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 	HumanClass(const std::string& inputName, int inputHeight, int inputWeight);
 
-	//–¼‘O‚ÌƒQƒbƒ^
+	//åå‰ã®ã‚²ãƒƒã‚¿
 	std::string getName() const;
 
-	//g’·‚ÌƒQƒbƒ^
+	//èº«é•·ã®ã‚²ãƒƒã‚¿
 	int getHeight() const;
 
-	//‘Ìd‚ÌƒQƒbƒ^
+	//ä½“é‡ã®ã‚²ãƒƒã‚¿
 	int getWeight() const;
 
-	//‘Ìd‚ğ‘‚â‚·
+	//ä½“é‡ã‚’å¢—ã‚„ã™
 	void increaseWeight(int plusHeight);
 
-	//‘Ìd‚ğŒ¸‚ç‚·
+	//ä½“é‡ã‚’æ¸›ã‚‰ã™
 	void decreaseWeight(int minusHeight);
+
+private:
+	std::string fullName;  //åå‰
+	int userHeight;        //èº«é•·
+	int userWeight;        //ä½“é‡
+
 };
 
 #endif
