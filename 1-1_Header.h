@@ -22,7 +22,7 @@ public:
 	HumanClass(const std::string& inputName, int inputHeight, int inputWeight);
 
 	//名前のゲッタ
-	std::string getName() const;
+	const std::string& getName() const;
 
 	//身長のゲッタ
 	int getHeight() const;
