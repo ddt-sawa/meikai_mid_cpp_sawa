@@ -29,7 +29,7 @@ HumanClass::HumanClass(const string& inputName, int inputHeight, int inputWeight
 * @author Sawa
 * @since 7.27
 */
-string HumanClass::getName() const
+const string& HumanClass::getName() const
 {
 	return fullName;
 }
